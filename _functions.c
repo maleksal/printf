@@ -69,7 +69,7 @@ int execute_function_call(char c, va_list arg)
 
 	fp = get_specifier(c, arg);
 
-	if (fp == 0)
+	if (fp == -1)
 	{
 		_putchar('%');
 		_putchar(c);
