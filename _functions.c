@@ -57,7 +57,7 @@ int execute_function_call(char c, va_list arg)
 	if (fp == NULL)
 	{
 		_putchar('%');
-		_putchar('c');
+		_putchar(c);
 		return (2);
 	}
 	count += fp(c, arg);
