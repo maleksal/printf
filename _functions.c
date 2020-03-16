@@ -8,7 +8,9 @@
  */
 int is_a_char(va_list p)
 {
-_putchar(va_arg(p, int));
+char c;
+c = (va_arg(p, int));
+_putchar(c);
 return (1);
 }
 /**
@@ -22,9 +24,11 @@ int is_a_string(va_list p)
 	int i;
 
 	ptr = va_arg(p, char*);
-	for (i = 0; ptr[i] != '\0'; i++)
-		_putchar(ptr[i]);
-	return (i);
+if (ptr == NULL)
+ptr = "(null)";
+for (i = 0; ptr[i] != '\0'; i++)
+_putchar(ptr[i]);
+return (i);
 }
 /**
  *execute_function_call - checks if the character after % is valid
