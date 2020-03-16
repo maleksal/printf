@@ -21,7 +21,7 @@ return (1);
 int is_a_string(va_list p)
 {
 	char *ptr;
-	int i = 0;
+	int i, j = 0;
 
 	ptr = va_arg(p, char*);
 if (ptr == NULL)
