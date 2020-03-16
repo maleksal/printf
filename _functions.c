@@ -65,16 +65,16 @@ int is_a_string(va_list p)
 int execute_function_call(char c, va_list arg)
 {
 	int count = 0;
-	int (*fp)(char, va_list);
+	int fp;
 
-	fp = get_specifier;
+	fp = get_specifier(c, arg);
 
-	if (fp == NULL)
+	if (fp == 0)
 	{
 		_putchar('%');
 		_putchar(c);
 		return (2);
 	}
-	count += fp(c, arg);
+	count += fp;
 	return (count);
 }
