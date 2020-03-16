@@ -4,12 +4,12 @@
 /**
  *struct format - structure
  *@format: the characrter
- *@f: the function to call 
+ *@f: the function to call
  */
 typedef struct format
 {
-  char *format;
-  int (*f)(va_list p);
+char *format;
+int (*f)(va_list p);
 } arg;
 
 
