@@ -38,7 +38,7 @@ int _printf(const char *format, ...)
 					_putchar('%');
 				i++;
 			}
-			for ( ;format[i] == ' '; i++)
+			for ( ; format[i] == ' '; i++)
 			;
 			/* increment count */
 			count += execute_function_call(format[i], list);
