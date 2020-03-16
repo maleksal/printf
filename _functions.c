@@ -25,7 +25,14 @@ int is_a_string(va_list p)
 
 	ptr = va_arg(p, char*);
 if (ptr == NULL)
-write(1, "(null)", 6);
+{
+ptr = "(null)";
+for (j = 0; ptr[j] != '\0'; j++)
+{
+_putchar(ptr[j]);
+}
+return (0);
+}
 for (i = 0; ptr[i] != '\0'; i++)
 _putchar(ptr[i]);
 return (i);
