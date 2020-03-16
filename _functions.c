@@ -1,6 +1,8 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdarg.h>
+#include <unistd.h>
+
 /**
  *is_a_char - print if char
  *@p:pointer to args
@@ -13,30 +15,28 @@ c = (va_arg(p, int));
 _putchar(c);
 return (1);
 }
+
 /**
  *is_a_string - prints if string
  *@p:pointer to args
  *Return: int
  */
+
 int is_a_string(va_list p)
 {
 	char *ptr;
-	int i, j = 0;
+	int i;
 
 	ptr = va_arg(p, char*);
-if (ptr == NULL)
-{
-ptr = "(null)";
-for (j = 0; ptr[j] != '\0'; j++)
-{
-_putchar(ptr[j]);
+	if (ptr == NULL)
+		write(1, "(null)", 6);
+
+	for (i = 0; ptr[i] != '\0'; i++)
+		_putchar(ptr[i]);
+
+	return (i);
 }
-return (0);
-}
-for (i = 0; ptr[i] != '\0'; i++)
-_putchar(ptr[i]);
-return (i);
-}
+
 /**
  *execute_function_call - checks if the character after % is valid
  *@c:char
