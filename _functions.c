@@ -12,46 +12,6 @@ _putchar(va_arg(p, int));
 return (1);
 }
 /**
- *is_an_int - print if int or dec
- *@p:pointer to args
- *Return: int
- */
-
-/*
-int is_an_int(va_list p)
-{
-unsigned int j,n,x,y,z,o,v;
-x = 1;
-o = 1;
-n = va_arg(p, int);
-if (n < 0)
-{
-_putchar('-');
-y = -n;
-}
-else
-y = n;
-z = y;
-while (z > 9)
-{
-z = z / 10;
-x++;
-o = o * 10;
-}
-for (j = 1; j <= x;j++)
-{
-v = y / o;
-y = t % o;
-o = o / 10;
-_putchar(o + '0');
-}
-if (n < 10)
-return (x + 1);
-return (x);
-}
-*/
-
-/**
  *is_a_string - prints if string
  *@p:pointer to args
  *Return: int
@@ -64,10 +24,14 @@ int is_a_string(va_list p)
 	ptr = va_arg(p, char*);
 	for (i = 0; ptr[i] != '\0'; i++)
 		_putchar(ptr[i]);
-	
 	return (i);
 }
-
+/**
+ *execute_function_call - checks if the character after % is valid
+ *@c:char
+ *@arg: pointer
+ *Return: int
+ */
 
 int execute_function_call(char c, va_list arg)
 {
