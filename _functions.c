@@ -29,7 +29,7 @@ int is_a_string(va_list p)
 
 	ptr = va_arg(p, char*);
 	if (ptr == NULL)
-		write(1, "(null)", 6);
+		return write(1, "(null)", 6);
 
 	for (i = 0; ptr[i] != '\0'; i++)
 		_putchar(ptr[i]);
