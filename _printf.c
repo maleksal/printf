@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+  * _printf - prints formated string
+  * @format: variable arguments
+  * Return: number of outputed chars
+  */
 
 int _printf(const char *format, ...)
 {
@@ -10,14 +15,10 @@ int _printf(const char *format, ...)
 	va_list list;
 
 	va_start(list, format);
-
 	/* check for null */
-
 	if (format == NULL)
 		return (-1);
-
 	/* access string */
-
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		/* check for % */
@@ -25,22 +26,24 @@ int _printf(const char *format, ...)
 		{
 			/* go next elem */
 			i++;
-		
 			/* if next elem is space */
 			for (; format[i] == ' '; i++)
 			;
-		
 			/* if next elem is \0 */
 			if (format[i] == '\0')
 				return (-1);
-			
+			while (format[i] == '%')
+			{
+				if (format[i - 1] == '%' && format[i + 1] == '%')
+					_putchar('%');
+				i++;
+			}
 			/* increment count */
-			count +=execute_function_call(format[i], list);
-
+			count += execute_function_call(format[i], list);
 		} else /* if not % print elem*/
 		{
 			  _putchar(format[i]);
-			   count += 1;
+			   count++;
 		}
 	}
 	return (count);
