@@ -25,7 +25,7 @@ int is_percent(va_list __attribute__((unused)) args)
  */
 int is_a_char(va_list p)
 {
-char c;
+unsigned char c;
 c = (va_arg(p, int));
 _putchar(c);
 return (1);
