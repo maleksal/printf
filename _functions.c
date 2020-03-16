@@ -21,11 +21,11 @@ return (1);
 int is_a_string(va_list p)
 {
 	char *ptr;
-	int i;
+	int i = 0;
 
 	ptr = va_arg(p, char*);
 if (ptr == NULL)
-ptr = "(null)";
+write(1, "(null)", 6);
 for (i = 0; ptr[i] != '\0'; i++)
 _putchar(ptr[i]);
 return (i);
