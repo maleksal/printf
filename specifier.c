@@ -13,7 +13,7 @@ int get_specifier(char c, va_list p)
 arg arr[] = {
 {"c", is_a_char},
 {"s", is_a_string},
-/*{"d", is_an_int}, */
+{"%", is_percent},
 /*{"i", is_an_int},*/
 {NULL, NULL}
 };

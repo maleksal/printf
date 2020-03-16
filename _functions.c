@@ -4,6 +4,21 @@
 #include <unistd.h>
 
 /**
+  * is_percent - print %
+  * @args: percent sign (%)
+  * Return: umber of chars printed (1)
+  */
+
+int is_percent(va_list __attribute__((unused)) args)
+{
+	char per = '%';
+
+	_putchar(per);
+
+	return (1);
+}
+
+/**
  *is_a_char - print if char
  *@p:pointer to args
  *Return: int

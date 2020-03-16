@@ -24,6 +24,7 @@ int _putchar(char c);
 int is_a_string(va_list p);
 int is_an_int(va_list p);
 int is_a_char(va_list p);
+int is_percent(va_list __attribute__((unused)) args);
 
 /* execute_function_call prototype */
 int execute_function_call(char, va_list);

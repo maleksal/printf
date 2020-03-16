@@ -32,14 +32,7 @@ int _printf(const char *format, ...)
 			/* if next elem is \0 */
 			if (format[i] == '\0')
 				return (-1);
-			while (format[i] == '%')
-			{
-				if (format[i - 1] == '%' && format[i + 1] == '%')
-					_putchar('%');
-				i++;
-			}
-			for ( ; format[i] == ' '; i++)
-			;
+
 			/* increment count */
 			count += execute_function_call(format[i], list);
 		} else /* if not % print elem*/
