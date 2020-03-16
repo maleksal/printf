@@ -1,18 +1,20 @@
 #include "holberton.h"
 #include <stdio.h>
+
 /**
- *get_specifier - takes the char and calls the func
- *@c:char
- *@p:pointer
- *Return: int
- */
-int get_specifier(char c,va_list p)
+  * get_specifier - takes the char and calls the func
+  * @c:char
+  * @p:pointer
+  * Return: int
+  */
+
+int get_specifier(char c, va_list p)
 {
 arg arr[] = {
 {"c", is_a_char},
 {"s", is_a_string},
-/*{"d", is_an_int},
-{"i", is_an_int},*/
+/*{"d", is_an_int}, */
+/*{"i", is_an_int},*/
 {NULL, NULL}
 };
 int i = 0;
