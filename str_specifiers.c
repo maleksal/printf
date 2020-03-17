@@ -96,17 +96,20 @@ int is_rot13(va_list arg)
  */
 int in_rev(va_list p)
 {
-int i, j, count;
-int c;
+int i, count;
+char c;
 char *string;
 string = va_arg(p, char*);
 if (!string)
-string = "(null)";
+string = ")llun(";
 while (string[i] != '\0')
-i++;
-for (j = i ; j > 0; j--)
 {
-c = string[j - 1];
+i++;
+}
+i--;
+for (; i >= 0; i--)
+{
+c = string[i];
 _putchar(c);
 count++;
 }
