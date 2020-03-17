@@ -23,12 +23,9 @@ int get_specifier(char c, va_list);
 int _putchar(char c);
 int is_a_string(va_list p);
 int is_int(va_list arg);
-int is_decimal(va_list arg);
+int is_a_decimal(va_list p);
 int is_a_char(va_list p);
 int is_percent(va_list __attribute__((unused)) args);
-/* advanced functions prototype */
-int buf_print(char *buff, unsigned int n);
-unsigned int buff_1024(char *buff, char c, unsigned int i);
 /* execute_function_call prototype */
 int execute_function_call(char, va_list);
 
