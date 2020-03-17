@@ -25,7 +25,9 @@ int is_a_string(va_list p);
 int is_an_int(va_list p);
 int is_a_char(va_list p);
 int is_percent(va_list __attribute__((unused)) args);
-
+/* advanced functions prototype */
+int buff(char *buff, unsigned int n);
+unsigned int buff_1024(char *buff, char c, unsigned int i);
 /* execute_function_call prototype */
 int execute_function_call(char, va_list);
 
