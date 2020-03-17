@@ -37,15 +37,29 @@ int is_decimal(va_list arg)
 int is_unsigned(va_list n)
 {
 	unsigned int var;
+	unsigned int length;
+	int counter = 1;
 
 	var = va_arg(n, unsigned int);
+	length = var;
+
+	/* calculate digits */
+	while (length / 10)
+	{
+		length /= 10;
+		counter++;
+	}
 
 	if (var == 0)
-		return (print_unsigned_n(var));
+	{
+		print_unsigned_n(var);
+		return (counter);
+	}
 	if (var < 1)
 		return (-1);
 
-	return (print_unsigned_n(var));
+	print_unsigned_n(var);
+	return (counter);
 }
 /**
  *base8 - converts to octal
