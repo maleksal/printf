@@ -99,6 +99,8 @@ int in_rev(va_list p)
 int i, count;
 char c;
 char *string;
+i = 0;
+count = 0;
 string = va_arg(p, char*);
 if (!string)
 string = ")llun(";
