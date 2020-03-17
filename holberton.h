@@ -18,7 +18,9 @@ int _printf(const char *format, ...);
 
 /* get_specifier */
 int get_specifier(char c, va_list);
-
+/* advance tasks functions prototypes */
+int base2(unsigned int x, int dig);
+int print_bin(va_list p);
 
 int _putchar(char c);
 int is_a_string(va_list p);

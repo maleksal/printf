@@ -16,6 +16,7 @@ arg arr[] = {
 {"%", is_percent},
 {"i", is_int},
 {"d", is_decimal},
+{"b", print_bin},
 {NULL, NULL}
 };
 int i = 0;
