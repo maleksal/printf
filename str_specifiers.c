@@ -54,3 +54,37 @@ int is_a_string(va_list p)
 
 	return (i);
 }
+
+
+/**
+  * is_rot13 - encrypt char
+  * @arg: pointer
+  * Return: int
+  */
+
+int is_rot13(va_list arg)
+{
+	int i = 0;
+	char *c;
+	char cc;
+
+	c = va_arg(arg, char *);
+
+	while (c[i] != '\0')
+	{
+		for ( ; (c[i] >= 'A' && c[i] <= 'Z') || (c[i] >= 'a' && c[i] <= 'z'); )
+		{
+			if ((c[i] >= 'n' && c[i] <= 'z') || (c[i] >= 'N' && c[i] <= 'Z'))
+			{
+				cc = *(c + i) - 13;
+				break;
+			}
+			cc = *(c + i) + 13;
+			break;
+		}
+		_putchar(cc);
+		i++;
+	}
+
+	return (i);
+}
