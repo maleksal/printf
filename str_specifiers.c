@@ -64,7 +64,7 @@ int is_a_string(va_list p)
 
 int is_rot13(va_list arg)
 {
-	int i, b = 0;
+	int i;
 	char *c;
 	char cc;
 
@@ -72,7 +72,8 @@ int is_rot13(va_list arg)
 
 	if (c == NULL)
 		return (-1);
-	while (c[i] != '\0')
+
+	for (i = 0; c[i] != '\0'; i++)
 	{
 		for ( ; (c[i] >= 'A' && c[i] <= 'Z') || (c[i] >= 'a' && c[i] <= 'z'); )
 		{
@@ -84,9 +85,7 @@ int is_rot13(va_list arg)
 			cc = *(c + i) + 13;
 			break;
 		}
-		b += _putchar(cc);
-
-		i++;
+		_putchar(cc);
 	}
 	return (i);
 }
