@@ -11,6 +11,8 @@
 int _printf(const char *format, ...)
 {
 	int i;
+	int index;
+	char buffer[1024];
 	int count = 0;
 	va_list list;
 
@@ -41,6 +43,7 @@ int _printf(const char *format, ...)
 			   count++;
 		}
 	}
+	write(1, buffer, in);
 	va_end(list);
 	return (count);
 }
