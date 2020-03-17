@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
   * print_int - print digit
-  * @n: integer
+  * @number: integer
   * Return: number of times _putchar is called
   */
 
@@ -55,7 +55,7 @@ int is_int(va_list arg)
 
 /**
   * is_decimal - call function that prints number
-  * @p: pointer
+  * @arg: pointer
   *Return: int
   */
 
