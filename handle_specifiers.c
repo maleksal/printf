@@ -17,6 +17,7 @@ arg arr[] = {
 {"i", is_int},
 {"d", is_decimal},
 {"b", print_bin},
+{"u", is_unsigned},
 {NULL, NULL}
 };
 int i = 0;
