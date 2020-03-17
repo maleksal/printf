@@ -1,8 +1,8 @@
 **Creating our printf function**
 ============================
 A simple implementation of printf function that formats and prints data
-- this project is requested by Holberton School.
-----------------------------
+
+>this project is requested by Holberton School.
 
 ## Conversion specifiers
 ======
@@ -17,6 +17,6 @@ A simple implementation of printf function that formats and prints data
 - %r: Prints a reversed string
 - %R: Prints the Rot13 interpretation of a string
 
-** Authors**
+**Authors**
 - Malek Salem
 - Nour Ouhichi
