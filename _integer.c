@@ -6,36 +6,38 @@
   * @n: integer
   * Return: number of times _putchar is called
   */
-int print_int(int n)
-{
-	int count = 0;
 
-	if (n / 10 != 0)
+int print_int(int number)
+{
+	int length;
+	int division;
+	unsigned int num;
+
+	length = 0;
+	division = 1;
+
+	if (number < 0)
 	{
-		print_int(n / 10);
-		if (n > 0)
-		{
-			_putchar((n % 10) + '0');
-			count++;
-		} else
-		{
-			_putchar((-n % 10) + '0');
-			count++;
-		}
+		length += _putchar('-');
+		num = number * -1;
 	}
-	else if ((n / 10 == 0) && (n % 10 != 0) && (n > 0))
+	else
+		num = number;
+
+	for (; num / division > 9; )
+		division *= 10;
+
+	for (; division != 0; )
 	{
-		_putchar((n % 10) + '0');
-		count++;
+		length += _putchar('0' + num / division);
+		num %= division;
+		division /= 10;
 	}
-	else if ((n / 10 == 0) && (n % 10 != 0) && (n <= 0))
-	{
-		_putchar('-');
-		_putchar((-n % 10) + '0');
-		count += 2;
-	}
-	return (count);
+
+	return (length);
 }
+
+
 
 /**
   * is_int - call function that prints int
