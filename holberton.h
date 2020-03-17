@@ -35,7 +35,7 @@ int is_decimal(va_list p);
 int is_a_char(va_list p);
 int is_percent(va_list __attribute__((unused)) args);
 int is_unsigned(va_list n);
-
+int is_rot13(va_list arg);
 /* execute_function_call prototype */
 int execute_function_call(char, va_list);
 
