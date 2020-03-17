@@ -1,5 +1,4 @@
 ## Creating our printf function
-============================
 A simple implementation of printf function that formats and prints data
 
 >this project is requested by Holberton School.
