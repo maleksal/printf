@@ -19,6 +19,9 @@ arg arr[] = {
 {"b", print_bin},
 {"u", is_unsigned},
 {"R", is_rot13},
+{"o", is_octal},
+{"x", is_hexa_down},
+{"X", is_hexa_upper},
 {NULL, NULL}
 };
 int i = 0;

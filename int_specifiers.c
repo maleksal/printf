@@ -41,9 +41,22 @@ int is_unsigned(va_list n)
 	var = va_arg(n, unsigned int);
 
 	if (var == 0)
-		return (print_unsigned(var));
+		return (print_unsi(var));
 	if (var < 1)
 		return (-1);
 
-	return (print_unsigned(var));
+	return (print_unsi(var));
+}
+/**
+ *base8 - converts to octal
+ *@x: int
+ *@dig:int
+ *Return: int
+ */
+int base8(unsigned int x, int dig)
+{
+if (x / 8)
+dig = base8(x / 8, dig + 1);
+_putchar(n % 8 + '0');
+return (dig);
 }
