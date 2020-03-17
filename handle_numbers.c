@@ -36,7 +36,6 @@ int print_int(int number)
 	return (length);
 }
 
-
 /**
   * print_unsigned_n - print unsigned numbers
   * @n: unsigned int
@@ -45,12 +44,21 @@ int print_int(int number)
 
 int print_unsigned_n(unsigned int n)
 {
-	int length = 0;
+	int length;
+	int division = 1;
+	unsigned int num;
 
-	if (n / 10)
-		print_unsigned_n(n / 10);
+	num = n;
 
-	length += _putchar((n % 10) + '0');
+	for (; num / division > 9; )
+		division *= 10;
+
+	for ( ; division != 0; )
+	{
+		length += _putchar('0' + num / division);
+		num %= division;
+		division /= 10;
+	}
 
 	return (length);
 }
