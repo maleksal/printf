@@ -66,7 +66,6 @@ int is_rot13(va_list arg)
 {
 	int i;
 	char *c;
-	char cc;
 
 	c = va_arg(arg, char *);
 
@@ -75,17 +74,14 @@ int is_rot13(va_list arg)
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		for ( ; (c[i] >= 'A' && c[i] <= 'Z') || (c[i] >= 'a' && c[i] <= 'z'); )
+		if ((c[i] >= 'A' && c[i] <= 'Z') || (c[i] >= 'a' && c[i] <= 'z'))
 		{
 			if ((c[i] >= 'n' && c[i] <= 'z') || (c[i] >= 'N' && c[i] <= 'Z'))
-			{
-				cc = *(c + i) - 13;
-				break;
-			}
-			cc = *(c + i) + 13;
-			break;
-		}
-		_putchar(cc);
+				 _putchar(*(c + i) - 13);
+			else
+				_putchar(*(c + i) + 13);
+		} else
+			_putchar(c[i]);
 	}
 	return (i);
 }
