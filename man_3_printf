@@ -6,7 +6,7 @@
 #include "holberton.h"
 .br
 \fIint\fR
-.B _printf(\fIconst\fR \fIchar\fR \fI*format,\fR \fI...\fR); 
+.B _printf(\fIconst\fR \fIchar\fR \fI*format,\fR \fI...\fR);
 .SH DESCRIPTION
 Print argument according to specified format, or execute according to option.
 .SH CONVERSION SPECIFIERS
