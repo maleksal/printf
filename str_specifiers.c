@@ -87,6 +87,7 @@ int is_rot13(va_list arg)
 		}
 		_putchar(cc);
 	}
+	_putchar(c[i]);
 	return (i);
 }
 /**
