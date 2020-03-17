@@ -18,6 +18,7 @@ arg arr[] = {
 {"d", is_decimal},
 {"b", print_bin},
 {"u", is_unsigned},
+{"R", is_rot13},
 {NULL, NULL}
 };
 int i = 0;
