@@ -1,0 +1,33 @@
+.TH man 3  "16 march 2020" "GNU" "_printf man page"
+.SH NAME
+.B _printf
+- formats and prints data to standard output after conversion.
+.SH SYNOPSIS
+#include "holberton.h"
+.br
+\fIint\fR
+.B _printf(\fIconst\fR \fIchar\fR \fI*format,\fR \fI...\fR); 
+.SH DESCRIPTION
+Print argument according to specified format, or execute according to option.
+.SH CONVERSION SPECIFIERS
+_printf() conversion specifiers are:
+.TP
+.BR c
+The int argument is converted to a char
+.TP
+.B s
+The expected pointer *s is used to print strings
+.TP
+.B %
+Alone, no argument would be converted. The complete conversion specification is %%
+.TP
+.B d, i
+The int argument is converted to a signed decimal notation or an integer.
+.SH RETURN VALUE
+_printf returns the number of characters printed if the printing is successful.
+.SH SEE ALSO
+printf(3)
+.SH BUGS
+No bugs.
+.SH AUTHOR
+Malek Salem, Nour Ouhichi.
