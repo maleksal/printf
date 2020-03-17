@@ -38,6 +38,16 @@ int print_int(int number)
 }
 
 
+/**
+  * print_unsigned - print unsigned numbers
+  * @n: unsigned int
+  * Return: int
+  */
+
+int print_unsigned(int n)
+{
+	return (n);
+}
 
 /**
   * is_int - call function that prints int
