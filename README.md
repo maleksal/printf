@@ -1,4 +1,4 @@
-**Creating our printf function**
+## Creating our printf function
 ============================
 A simple implementation of printf function that formats and prints data
 
@@ -17,6 +17,5 @@ A simple implementation of printf function that formats and prints data
 - %r: Prints a reversed string
 - %R: Prints the Rot13 interpretation of a string
 
-**Authors**
-- Malek Salem
-- Nour Ouhichi
+## Authors
+**Malek Salem, Nour Ouhichi**
