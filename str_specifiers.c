@@ -70,6 +70,8 @@ int is_rot13(va_list arg)
 
 	c = va_arg(arg, char *);
 
+	if (c == NULL)
+		return (-1);
 	while (c[i] != '\0')
 	{
 		for ( ; (c[i] >= 'A' && c[i] <= 'Z') || (c[i] >= 'a' && c[i] <= 'z'); )

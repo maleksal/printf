@@ -21,7 +21,7 @@ return (dig);
 int base16_upper(unsigned int x, int dig)
 {
 if (x / 16)
-dig = base16_upper(n / 16, dig + 1);
+dig = base16_upper(x / 16, dig + 1);
 if ((x % 16) < 10)
 _putchar(x % 16 + 48);
 else
@@ -49,7 +49,7 @@ return (dig);
 int base16_down(unsigned int x, int dig)
 {
 if (x / 16)
-dig = base16_down(n / 16, dig + 1);
+dig = base16_down(x / 16, dig + 1);
 if ((x % 16) < 10)
 _putchar(x % 16 + 48);
 else

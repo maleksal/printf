@@ -57,6 +57,6 @@ int base8(unsigned int x, int dig)
 {
 if (x / 8)
 dig = base8(x / 8, dig + 1);
-_putchar(n % 8 + '0');
+_putchar(x % 8 + '0');
 return (dig);
 }
