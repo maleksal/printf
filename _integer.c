@@ -27,7 +27,7 @@ int print_int(int number)
 	for (; num / division > 9; )
 		division *= 10;
 
-	for (; division != 0; )
+	while (division != 0)
 	{
 		length += _putchar('0' + num / division);
 		num %= division;
