@@ -15,5 +15,5 @@ A simple implementation of printf function that formats and prints data, this pr
 - %R: Prints the Rot13 interpretation of a string
 
 ## Authors
-**Malek Salem** 
+**Malek Salem**
 **Nour Ouhichi**
