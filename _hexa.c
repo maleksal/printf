@@ -22,10 +22,10 @@ int base16_upper(unsigned int x, int dig)
 {
 if (x / 16)
 dig = base16_upper(n / 16, dig + 1);
-if ((n % 16) < 10)
-_putchar(n % 16 + 48);
+if ((x % 16) < 10)
+_putchar(x % 16 + 48);
 else
-_putchar(n % 16 + 55);
+_putchar(x % 16 + 55);
 return (dig);
 }
 /**
@@ -38,7 +38,7 @@ int is_hexa_upper(va_list p)
 int dig = 0;
 unsigned int x = va_arg(p, unsigned int);
 dig = base16_upper(x, dig) + 1;
-return (length);
+return (dig);
 }
 /**
  *base16_down - convertes to hexa
@@ -50,10 +50,10 @@ int base16_down(unsigned int x, int dig)
 {
 if (x / 16)
 dig = base16_down(n / 16, dig + 1);
-if ((n % 16) < 10)
-_putchar(n % 16 + 48);
+if ((x % 16) < 10)
+_putchar(x % 16 + 48);
 else
-_putchar(n % 16 + 87);
+_putchar(x % 16 + 87);
 return (dig);
 }
 /**
@@ -66,5 +66,5 @@ int is_hexa_down(va_list p)
 int dig = 0;
 unsigned int x = va_arg(p, unsigned int);
 dig = base16_down(x, dig) + 1;
-return (length);
+return (dig);
 }

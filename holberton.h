@@ -27,7 +27,7 @@ int base8(unsigned int x, int dig);
 int base16_upper(unsigned int x, int dig);
 int base16_down(unsigned int x, int dig);
 int print_int(int number);
-int print_unsi(unsigned int n);
+int print_unsigned(unsigned int n);
 
 /* format specifiers */
 int _putchar(char c);
