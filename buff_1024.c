@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *buff_1024 - 
+ *buff_1024 - adds characters
  *@buff:pointer
  *@c:char
  *@i:index

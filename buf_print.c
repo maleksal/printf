@@ -1,11 +1,11 @@
 #include "holberton.h"
 /**
- *bff - prints buffer to reduce the use of write
- *@buff:pointer
+ *buf_print - prints buffer to reduce the use of write
+ *@buf:pointer
  *@n:number of bytes to print
- *@Return: number of bytes printed
+ *Return: int
  */
-int buff(char *buff, unsigned int n)
+int buf_print(char *buf, unsigned int n)
 {
-return (write(1, buff, n));
+return (write(1, buf, n));
 }
