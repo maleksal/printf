@@ -87,8 +87,7 @@ int is_rot13(va_list arg)
 		}
 		_putchar(cc);
 	}
-	_putchar(c[i]);
-	return (i);
+	return (i - 1);
 }
 /**
  *in_rev - prints a string in reverse
