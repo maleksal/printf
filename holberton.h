@@ -41,6 +41,7 @@ int is_hexa_upper(va_list p);
 int is_hexa_down(va_list p);
 int is_octal(va_list p);
 int is_rot13(va_list arg);
+int in_rev(va_list p);
 /* execute_function_call prototype */
 int execute_function_call(char, va_list);
 

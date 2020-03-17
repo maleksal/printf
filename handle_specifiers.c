@@ -22,6 +22,7 @@ arg arr[] = {
 {"o", is_octal},
 {"x", is_hexa_down},
 {"X", is_hexa_upper},
+{"r", in_rev},
 {NULL, NULL}
 };
 int i = 0;

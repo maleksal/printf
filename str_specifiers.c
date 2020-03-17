@@ -89,3 +89,26 @@ int is_rot13(va_list arg)
 	}
 	return (i);
 }
+/**
+ *in_rev - prints a string in reverse
+ *@p:pointer to the string
+ *Return: int
+ */
+int in_rev(va_list p)
+{
+int i, j, count;
+char c;
+char *string;
+string = va_arg(p, char*);
+if (!string)
+string = "(null)";
+for (i = 0; string[i] != '\0';)
+i++;
+for (j = i - 1; j > 0; j--)
+{
+c = string[j];
+_putchar(c);
+count++;
+}
+return (count);
+}
