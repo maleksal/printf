@@ -38,28 +38,19 @@ int print_int(int number)
 
 
 /**
-  * print_unsigned - print unsigned numbers
+  * print_unsigned_n - print unsigned numbers
   * @n: unsigned int
   * Return: int
   */
 
-int print_unsigned(unsigned int n)
+int print_unsigned_n(unsigned int n)
 {
-	int length;
-	int division;
-	unsigned int num;
+	int length = 0;
 
-	num = n;
+	if (n / 10)
+		print_unsigned_n(n / 10);
 
-	for (; num / division > 9; )
-		division *= 10;
-
-	for ( ; division != 0; )
-	{
-		length += _putchar('0' + num / division);
-		num %= division;
-		division /= 10;
-	}
+	length += _putchar((n % 10) + '0');
 
 	return (length);
 }
