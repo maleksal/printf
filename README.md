@@ -1,10 +1,9 @@
-## Creating our printf function
-A simple implementation of printf function that formats and prints data
-
->this project is requested by Holberton School.
+![alt text](https://intranet.hbtn.io/assets/checker_whm_pre_michelle_obama-e91623d655982a75cbf151737ba29e64dfb854c39e9eb276de36ec6da2bfee4b.png)
+## Creating our _printf function
+A simple implementation of printf function that formats and prints data, this project is requested by Holberton School.
 
 ## Conversion specifiers
-======
+
 - %c: Prints a single character.
 - %s: Prints a string of characters.
 - %d: Prints integers.
@@ -17,4 +16,5 @@ A simple implementation of printf function that formats and prints data
 - %R: Prints the Rot13 interpretation of a string
 
 ## Authors
-**Malek Salem, Nour Ouhichi**
+**Malek Salem** 
+**Nour Ouhichi**
