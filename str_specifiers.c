@@ -104,9 +104,9 @@ if (!string)
 string = "(null)";
 for (i = 0; string[i] != '\0';)
 i++;
-for (j = i - 1; j > 0; j--)
+for (j = i ; j > 0; j--)
 {
-c = string[j];
+c = string[j - 1];
 _putchar(c);
 count++;
 }
