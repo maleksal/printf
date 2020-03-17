@@ -64,7 +64,7 @@ int is_a_string(va_list p)
 
 int is_rot13(va_list arg)
 {
-	int i,b = 0;
+	int i, b = 0;
 	char *c;
 	char cc;
 
