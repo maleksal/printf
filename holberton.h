@@ -22,6 +22,7 @@ int get_specifier(char c, va_list);
 /* advance tasks functions prototypes */
 int base2(unsigned int x, int dig);
 int print_bin(va_list p);
+int buff(char *buffer, int i, int length);
 
 int print_int(int number);
 int print_unsigned(unsigned int n);
