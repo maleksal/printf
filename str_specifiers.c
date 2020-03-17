@@ -97,12 +97,12 @@ int is_rot13(va_list arg)
 int in_rev(va_list p)
 {
 int i, j, count;
-char c;
+int c;
 char *string;
 string = va_arg(p, char*);
 if (!string)
 string = "(null)";
-for (i = 0; string[i] != '\0';)
+while (string[i] != '\0')
 i++;
 for (j = i ; j > 0; j--)
 {
