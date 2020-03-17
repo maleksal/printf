@@ -14,7 +14,8 @@ arg arr[] = {
 {"c", is_a_char},
 {"s", is_a_string},
 {"%", is_percent},
-/*{"i", is_an_int},*/
+{"i", is_int},
+{"d", is_decimal},
 {NULL, NULL}
 };
 int i = 0;
