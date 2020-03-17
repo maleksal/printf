@@ -1,5 +1,4 @@
-![alt text](https://intranet.hbtn.io/assets/checker_whm_pre_michelle_obama-e91623d655982a75cbf151737ba29e64dfb854c39e9eb276de36ec6da2bfee4b.png)
-## Creating our _printf function
+# Creating our _printf function
 A simple implementation of printf function that formats and prints data, this project is requested by Holberton School.
 
 ## Conversion specifiers
