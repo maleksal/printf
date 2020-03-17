@@ -41,11 +41,11 @@ int is_unsigned(va_list n)
 	var = va_arg(n, unsigned int);
 
 	if (var == 0)
-		return (print_unsi(var));
+		return (print_unsigned(var));
 	if (var < 1)
 		return (-1);
 
-	return (print_unsi(var));
+	return (print_unsigned(var));
 }
 /**
  *base8 - converts to octal
